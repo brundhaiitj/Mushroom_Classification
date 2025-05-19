@@ -1,47 +1,9 @@
-# 🍄 Mushroom Classification (Group 46)
+# 🍄 Mushroom Classification using Machine Learning
 
-A machine learning project to classify mushrooms as **edible** or **poisonous** using supervised learning and dimensionality reduction techniques.
-
----
-
-## 📊 Dataset
-
-* **Source**: UCI Mushroom Dataset
-* **Instances**: 8124
-* **Features**: 22 categorical
-* **Target**: `class` (edible or poisonous)
+This project focuses on classifying mushrooms as **edible** or **poisonous** using machine learning techniques. It uses a dataset of mushroom characteristics and explores various preprocessing, dimensionality reduction, and classification models.
 
 ---
-
-## 🔧 Preprocessing
-
-* No missing or duplicate values
-* Ordinal encoding for categorical variables
-* Outliers removed using IQR method
-
----
-
-## 📉 Dimensionality Reduction
-
-* **PCA**: 9 components explained \~90.57% variance (after outlier removal)
-* **LDA**: Improved class separation, accuracy up to 99.07%
-
----
-
-## 🤖 Models & Accuracy
-
-| Model         | Accuracy |
-| ------------- | -------- |
-| KNN           | 99.91%   |
-| SVM (RBF)     | 100.0%   |
-| Logistic Reg. | 94.67%   |
-| Decision Tree | \~96%    |
-
-Best performers: **KNN** and **SVM (RBF Kernel)**
-
----
-
-## 📂 Files
+## Files
 
 * `mushroom_classification.py` – Code notebook
 * `IML PROJECT.pdf` – Full report
@@ -51,10 +13,67 @@ Best performers: **KNN** and **SVM (RBF Kernel)**
 
 ---
 
-## 🚀 How to Run
+## Dataset Overview
 
-```bash
-git clone https://github.com/your-username/mushroom-classification.git
-cd mushroom-classification
-jupyter notebook Mushroom_Classification_grp_46.ipynb
-```
+* **Source**: UCI Machine Learning Repository
+* **Instances**: 8124
+* **Attributes**: 23 categorical features including:
+
+  * `cap-shape`, `cap-color`, `gill-size`, `odor`, `spore-print-color`, etc.
+* **Target Variable**: `class` (edible or poisonous)
+
+---
+
+## Preprocessing
+
+* **Missing Values**: None
+* **Duplicates**: None
+* **Encoding**: Ordinal Encoding used to convert categorical features into numeric format
+
+---
+
+## Classification Models & Results
+
+| Model                   | Accuracy (%) |
+| ----------------------- | ------------ |
+| K-Nearest Neighbors     | **99.91**    |
+| SVM (RBF Kernel)        | **100.0**    |
+| Logistic Regression     | 94.67        |
+| Decision Tree (Gini)    | 96.14        |
+| Decision Tree (Entropy) | 95.85        |
+
+**Best Performers**:
+
+* **KNN** and **SVM (RBF)** consistently achieved near-perfect classification performance.
+
+---
+
+## Model Evaluation
+
+* Evaluation Metrics:
+
+  * **Accuracy**
+  * **Precision**
+  * **Recall**
+  * **F1-Score**
+* Confusion Matrices analyzed for each model
+* Cross-validation used for hyperparameter tuning (e.g., K in KNN)
+
+---
+
+## Key Findings
+
+* Outlier removal significantly improved LDA performance
+* PCA effectively reduced dimensionality while retaining most variance
+* KNN and SVM are robust classifiers for this dataset
+* Logistic Regression performed well despite the dataset's complexity
+* Decision Trees offer good interpretability with high accuracy
+
+---
+
+## Technologies Used
+
+* Python
+* NumPy, Pandas, Matplotlib, Seaborn
+* Scikit-learn
+* Jupyter Notebook
