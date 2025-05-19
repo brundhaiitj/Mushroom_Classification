@@ -43,11 +43,11 @@ Best performers: **KNN** and **SVM (RBF Kernel)**
 
 ## 📂 Files
 
-* `Mushroom_Classification.py` – Code notebook
+* `mushroom_classification.py` – Code notebook
 * `IML PROJECT.pdf` – Full report
 * `README.md` – Project summary
 * `Mushroom_Classification.pptx` – Project Presentation
-* `mushroom.csv` – Dataset
+* `mushrooms.csv` – Dataset
 
 ---
 
