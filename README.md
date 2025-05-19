@@ -15,8 +15,6 @@ This project focuses on classifying mushrooms as **edible** or **poisonous** usi
 
 ## Dataset Overview
 
-* **Source**: UCI Machine Learning Repository
-* **Instances**: 8124
 * **Attributes**: 23 categorical features including:
 
   * `cap-shape`, `cap-color`, `gill-size`, `odor`, `spore-print-color`, etc.
